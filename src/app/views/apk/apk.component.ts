@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-// import { AlertController, ToastController } from '@ionic/angular';
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonInput, IonItem, IonLabel, IonList, IonSelect, IonSelectOption, IonTextarea, ToastController } from '@ionic/angular';
-
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonInput, IonItem, IonLabel, IonList, IonSelect, IonSelectOption, IonTextarea, IonToolbar, IonTitle, IonBackButton, IonButtons, ToastController, IonIcon, IonHeader, IonText } from '@ionic/angular/standalone';
 import { FirestoreService } from './../../common/services/firestore.service';
 import { Categoria } from './../../common/models/categoria.models';
 import { Observable } from 'rxjs';
@@ -13,25 +11,27 @@ import { v4 as uuidv4 } from 'uuid';
 @Component({
   selector: 'app-apk',
   standalone: true,
-  imports: [CommonModule, FormsModule,     CommonModule,
+  imports: [IonText, IonHeader,  CommonModule,
     FormsModule,
-    // Importación individual de componentes de Ionic
-    IonItem,
-    IonLabel,
-    IonInput,
-    IonSelect,
-    IonSelectOption,
+
     IonButton,
     IonCard,
     IonCardHeader,
     IonCardTitle,
     IonCardContent,
-    IonTextarea,
     IonContent,
+    IonItem,
+    IonLabel,
+    IonInput,
+    IonTextarea,
+    IonSelect,
+    IonSelectOption,
     IonList,
-    NgForOf,
-    AsyncPipe,
-],
+    IonToolbar,
+    IonTitle,
+    IonBackButton,
+    IonButtons,
+    IonIcon],
   templateUrl: './apk.component.html',
   styleUrls: ['./apk.component.scss'],
 })
