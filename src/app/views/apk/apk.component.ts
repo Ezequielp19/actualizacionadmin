@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { AlertController, ToastController, IonicModule } from '@ionic/angular';
+// import { AlertController, ToastController } from '@ionic/angular';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonInput, IonItem, IonLabel, IonList, IonSelect, IonSelectOption, IonTextarea, ToastController } from '@ionic/angular';
+
 import { FirestoreService } from './../../common/services/firestore.service';
 import { Categoria } from './../../common/models/categoria.models';
 import { Observable } from 'rxjs';
